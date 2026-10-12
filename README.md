@@ -1,8 +1,8 @@
-# Apex_Coach by ROOKIE_ON_TOUR
+# PostStint Analysis  (PS-Analysis)
 ----------------------------------------
-Was ist Apex_Coach?
+Was ist PostStint Analysis?
 ----------------------------------------
-Apex Coach ist ein Fahrtrainer für iRacing, der auf deinem PC läuft. Nach dem Start liest er die Telemetrie deiner aktuellen Fahrt, also Rundenzeiten, Brems- und Lenkdaten, und gibt dir danach zwei Dinge: Der Fahrtrainer sagt dir, wo du auf der Strecke Zeit findest, etwa später bremsen oder mehr Druck. Der Setup-Bauer schlägt Änderungen am Auto vor, etwa Stabilisator oder Bremsbalance. Die Stimme spricht mit deiner eigenen Aufnahme.
+PS-Analysis ist ein Fahrtrainer für iRacing, der auf deinem PC läuft. Nach dem Start liest er die Telemetrie deiner aktuellen Fahrt, also Rundenzeiten, Brems- und Lenkdaten, und gibt dir danach zwei Dinge: Der Fahrtrainer sagt dir, wo du auf der Strecke Zeit findest, etwa später bremsen oder mehr Druck. Der Setup-Bauer schlägt Änderungen am Auto vor, etwa Stabilisator oder Bremsbalance. Die Stimme spricht mit deiner eigenen Aufnahme.
 
 Deine Daten bleiben dabei zu Hause. Die .ibt-Dateien, deine Rundenzeiten, dein Gedächtnis, deine Setups und dein Passwort liegen nur auf deinem Rechner. Das Passwort wird nur als Hash gespeichert und lässt sich nicht zurückholen. Es gibt kein Zurücksetzen über das Internet.
 
@@ -12,7 +12,7 @@ Offline passiert gar nichts nach außen. Der Coach nutzt dann nur das, was schon
 
 Was sind die Karten?
 ----------------------------------------
-Die Karten sind das Herz von Apex Coach. Eine Karte gehört immer zu einer Kombination: Strecke, Auto, nass oder trocken, Temperatur und Tank. Es gibt zwei Sorten: die Telemetrie-Karte mit den Fahrdaten und die Setup-Karte mit den Auto-Werten.
+Die Karten sind das Herz von PS_Analysis. Eine Karte gehört immer zu einer Kombination: Strecke, Auto, nass oder trocken, Temperatur und Tank. Es gibt zwei Sorten: die Telemetrie-Karte mit den Fahrdaten und die Setup-Karte mit den Auto-Werten.
 
 Die Telemetrie-Karte sagt, wo gebremst wird und mit wie viel Druck. Sie nennt die Bremse als Meter vor der Kurve, zum Beispiel 53 bis 100 Meter vor T3 bei 70 bis 80 Prozent Druck. Der Coach schickt dich dann einen Schritt an die nahe Kante, nicht in die Mitte. Die Setup-Karte trägt eine Spanne echter Stellwerte: Reifendruck, Sturz, Spur, Federn, Dämpfer, Stabilisator, Flügel, Fahrhöhe, Bremsbalance, Differenzial.
 
@@ -28,4 +28,4 @@ Runden neben der Strecke fliegen raus. Runden ohne Temperatur oder ohne Tankstan
 
 Offline gefahrene Runden und Dateien, die schon im Ordner liegen, kommen nie nachträglich hinein.
 
-### ACHTUNG: AKTUELL NUR DEUTSCHE SPRACHE UND MAXIMAL 7 TESTER!!!
+### ACHTUNG: MAXIMAL 7 TESTER!!!
