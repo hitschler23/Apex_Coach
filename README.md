@@ -9,7 +9,7 @@ Deine Daten bleiben dabei zu Hause. Die .ibt-Dateien, deine Rundenzeiten, dein G
 Ins Internet geht nur eine anonyme Karte, und nur wenn du online bist und wirklich fährst. Die Karte enthält keine Namen, kein Team und keine Originaldatei, sondern nur eine Spanne: Strecke, Auto, nass oder trocken, Temperatur, Tankbereich, Bremszonen und Setup-Werte. Alle Fahrer mit derselben Kombination teilen sich eine Zeile in der Community-Datenbank. Dateien, die bereits im Ordner liegen, und Fahrten vor dem Online-Gehen werden nie nachgereicht.
 
 Offline passiert gar nichts nach außen. Der Coach nutzt dann nur das, was schon auf deinem PC liegt: deine eigenen Fahrten und früher geholte Community-Karten. Wer ein Team-Setup nicht teilen will, geht vor der Fahrt offline. Beim nächsten Start bist du wieder online.
-----------------------------------------
+
 Was sind die Karten?
 ----------------------------------------
 Die Karten sind das Herz von Apex Coach. Eine Karte gehört immer zu einer Kombination: Strecke, Auto, nass oder trocken, Temperatur und Tank. Es gibt zwei Sorten: die Telemetrie-Karte mit den Fahrdaten und die Setup-Karte mit den Auto-Werten.
@@ -19,7 +19,7 @@ Die Telemetrie-Karte sagt, wo gebremst wird und mit wie viel Druck. Sie nennt di
 Pro Kombination lebt genau eine Zeile in der Community-Datenbank. Jeder Fahrer, der dort online fährt, mischt sich Gewichtet hinein. Der erste Beitrag ist noch das Setup einer Person, etwa dem dritten wird es eine echte Mischung sein. Ausreißer ziehen die Spanne nicht auseinander. Leere Kombinationen werden nicht angelegt, deshalb bleibt die Datenbank klein.
 
 Der Tank bestimmt den Modus: unter 15 Liter Hotlap, 15 bis 55 Liter Rennen, darüber Endurance. Fehlt eine Karte, weicht der Vergleich nur nach unten aus. Nass und trocken werden nie gemischt. Deine Originaldatei sieht niemand, nur die anonyme Spanne.
-----------------------------------------
+
 Wird jede gefahrene Runde erfasst?
 ----------------------------------------
 Nein. Nur saubere Runden aus einer Fahrt zählen, die entstehen, während du online bist.
