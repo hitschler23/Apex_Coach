@@ -2,9 +2,9 @@
 ----------------------------------------
 Was ist PostStint Analysis?
 ----------------------------------------
-PS-Analysis ist ein Fahrtrainer für iRacing, der auf deinem PC läuft. Nach dem Start liest er die Telemetrie deiner aktuellen Fahrt, also Rundenzeiten, Brems- und Lenkdaten, und gibt dir danach zwei Dinge: Der Fahrtrainer sagt dir, wo du auf der Strecke Zeit findest, etwa später bremsen oder mehr Druck. Der Setup-Bauer schlägt Änderungen am Auto vor, etwa Stabilisator oder Bremsbalance. Die Stimme spricht mit deiner eigenen Aufnahme.
+PS-Analysis ist ein Fahrtrainer für iRacing, der auf deinem PC läuft. Nach dem Start liest er die Telemetrie deiner aktuellen Fahrt, also Rundenzeiten, Brems- und Lenkdaten, und gibt dir danach zwei Dinge: Der Fahrtrainer sagt dir, wo du auf der Strecke Zeit findest, etwa später bremsen oder mehr Druck. Der Setup-Bauer schlägt Änderungen am Auto vor, etwa Stabilisator oder Bremsbalance. 
 
-Deine Daten bleiben dabei zu Hause. Die .ibt-Dateien, deine Rundenzeiten, dein Gedächtnis, deine Setups und dein Passwort liegen nur auf deinem Rechner. Das Passwort wird nur als Hash gespeichert und lässt sich nicht zurückholen. Es gibt kein Zurücksetzen über das Internet.
+Deine Daten bleiben dabei zu Hause. Die .ibt-Dateien, deine Rundenzeiten, dein Gedächtnis, deine Setups und dein Passwort liegen nur auf deinem Rechner.
 
 Ins Internet geht nur eine anonyme Karte, und nur wenn du online bist und wirklich fährst. Die Karte enthält keine Namen, kein Team und keine Originaldatei, sondern nur eine Spanne: Strecke, Auto, nass oder trocken, Temperatur, Tankbereich, Bremszonen und Setup-Werte. Alle Fahrer mit derselben Kombination teilen sich eine Zeile in der Community-Datenbank. Dateien, die bereits im Ordner liegen, und Fahrten vor dem Online-Gehen werden nie nachgereicht.
 
