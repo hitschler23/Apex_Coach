@@ -1,147 +1,130 @@
 # PostStint Analysis (PS-Analysis)
 
-**Your local AI driving coach for iRacing.**  
+**Your local AI driving coach for iRacing.**
 **Drive. Learn. Optimize.**
 
 PostStint Analysis analyzes your driving after each stint and helps you improve both your driving technique and your car setup. It runs locally on your PC, uses your iRacing telemetry, and combines your own driving data with anonymous community reference cards.
 
-**Alpha version 0.1.10 — currently limited to a maximum of 7 testers.**
+**Alpha version 0.1.11 — currently limited to a maximum of 7 testers.**
 
 [**Download the latest release**](https://github.com/hitschler23/PostStint-Analysis-PS-Analysis-/releases/latest) · [View source code](https://github.com/hitschler23/PostStint-Analysis-PS-Analysis-)
 
 ---
 
-## 🏁 What is PostStint Analysis?
+## What is PostStint Analysis?
 
-PS-Analysis is a local driving coach and setup assistant designed for iRacing. After your session, it analyzes your telemetry and provides practical feedback to help you find lap time.
+PS-Analysis is a local driving coach and setup assistant for iRacing. After your session, it reads the telemetry on your PC and gives practical feedback so you can find lap time.
+
+A standalone tool. Not affiliated with iRacing.com.
 
 ### Driving Coach
 - Analyzes braking, throttle, steering and cornering speed.
-- Identifies braking zones and potential areas for improvement.
-- Compares your driving against available reference data.
-- Provides actionable coaching feedback to help you improve consistency and pace.
-- Supports spoken output using your own voice recording.
+- Identifies braking zones and where time is available.
+- Compares your driving with the community reference for the same track, car, weather, temperature and fuel load.
+- Names the near edge of that range, for example a few meters later on the brake or a few percent less brake pressure.
+- Supports spoken output.
 
 ### Setup Assistant
 - Helps you identify potential setup improvements.
 - Works with setup reference ranges from the community.
-- Covers parameters such as tire pressure, camber, toe, springs, dampers, anti-roll bars, wings, ride height, brake bias and differential settings.
+- Covers tire pressure, camber, toe, springs, dampers, anti-roll bars, wings, ride height, brake bias and differential settings, where the telemetry file actually contains those values.
 
-### Detailed Community Telemetry
-Version 0.1.10 introduces more detailed community telemetry for individual corners, including:
+### Community telemetry, per corner
+Each telemetry card can carry, for a corner:
 
-- Braking points and brake pressure
-- Throttle application
-- Steering input
+- Brake point in meters before the corner, and brake pressure
+- Throttle point relative to the apex, and throttle percentage
+- Steering angle at the apex
 - Apex speed
 - Setup parameter ranges
 
-The goal is to build increasingly useful reference data from real driving sessions.
+The goal is to build a useful reference from real sessions and to move a driver toward that reference one step at a time.
 
 ---
 
-## 🧠 Community Cards — The Core of PS-Analysis
+## Community cards
 
-Community cards provide shared reference data for specific combinations of:
+Community cards are shared reference data for one combination of:
 
 - Track
 - Car
-- Dry or wet conditions
-- Track temperature range
-- Fuel-load range
+- Dry or wet
+- Track temperature band
+- Fuel-load band
 
-There are two types of cards:
+**Telemetry cards** hold the driving ranges above.
+**Setup cards** hold the setup ranges.
 
-**Telemetry Cards** contain reference ranges for driving behavior, including braking zones, brake pressure, throttle, steering and cornering speed.
+Each combination has one living entry. A new session is merged into that entry. An outlier does not blow the range open. Wet and dry are never mixed. If the exact card is missing, a less specific compatible card can be used.
 
-**Setup Cards** contain reference ranges for actual vehicle setup parameters.
-
-Each combination has one shared community entry. Contributions are weighted into the existing reference data, while outliers are handled to reduce the influence of unusual values. Empty combinations are not created unnecessarily.
-
-The fuel load determines the driving mode:
+Fuel load selects the band:
 
 - **Below 15 liters:** Hotlap
 - **15–55 liters:** Race
 - **Above 55 liters:** Endurance
 
-If an exact reference is unavailable, PS-Analysis can fall back to a less specific compatible reference. Wet and dry data are never mixed.
+---
+
+## Your data stays on your PC
+
+The original iRacing `.ibt` files stay on your computer. Lap times, personal memory and setups stay local. The coach works from that local data and from community cards already on the PC.
+
+What can leave the PC is an anonymous reference range for track, car, conditions, fuel band, telemetry and setup. No name, no team, no complete telemetry file.
+
+Sign-in is Discord. One click opens the browser. The PC stores only your Discord user ID and display name.
+
+Offline, nothing new is sent. You keep working with your own data and the cards already downloaded. If a session should not contribute, go offline before you drive.
+
+### Train the coach
+
+Older `.ibt` files are not read on their own. The button **Train the coach** asks first:
+
+You are training the coach with your data. The data is anonymous and cannot be traced back to you. Confirm that you want this.
+
+Only after you confirm are those files turned into the same anonymous cards. Each file is recognized by its content and counted once. A renamed copy is still the same file and is skipped. That keeps the ranges from being distorted.
+
+### Which laps count
+
+- Only clean, eligible laps are used.
+- Off-track laps are excluded.
+- Laps without the required temperature or fuel information are skipped, not guessed.
+- If the track changes between dry and wet, laps go into the matching card.
+- The complete `.ibt` is not uploaded.
 
 ---
 
-## 🔒 Your Data. Your PC. Your Control.
+## On your PC
 
-PS-Analysis is designed around local processing and data privacy.
+The installer is in English, so it is readable outside Germany. On a German Windows it stays German.
 
-**Your original driving data stays on your computer.**
+Telemetry is taken from the real Documents folder Windows reports. That includes a normal `Documents` folder, a folder redirected through OneDrive, and a localized name such as `ドキュメント`, including user names that are not Latin letters.
 
-- Original iRacing `.ibt` files remain local.
-- Your lap times, personal memory and setups remain local.
-- Your password is stored as a hash on your PC.
-- Core coaching and analysis use your local data and previously downloaded community cards.
-- Community sharing is limited to anonymous reference data, not complete telemetry files.
+After a new sign-in, the short introduction comes first. **Train the coach** is the step after online/offline. The online window stays closed until you finish that introduction with **Done**. On the next sign-in it opens right away.
 
-When you are offline, no new community data is sent. You can continue working with your own data and previously downloaded references.
-
-If you do not want a team setup or a particular session to contribute to the community, go offline before driving.
-
-### What gets shared?
-
-Only eligible laps from sessions driven while online can contribute to community cards. The shared information consists of anonymous reference ranges for the relevant track, car, conditions, fuel range, telemetry and setup parameters.
-
-Names, team information and original telemetry files are not included in the community cards.
-
-Files already present in your iRacing folder, as well as sessions driven before going online, are never uploaded retroactively.
+Analysis runs locally after the session, so the PC is not doing this work while you are on track. Sharing and updates need the online services. Local coaching continues with what is already stored.
 
 ---
 
-## 📊 How Are Laps Processed?
+## Alpha — maximum 7 testers
 
-PS-Analysis does not automatically use every lap.
+PS-Analysis is in alpha. This phase is limited to 7 testers. The aim is to find bugs, improve coaching quality, and make the app more reliable. Tester feedback shapes the next releases.
 
-- Only clean, eligible laps from online driving sessions are considered.
-- Laps involving off-track incidents are excluded.
-- Laps without the required temperature or fuel information are skipped rather than guessed.
-- If conditions change during a session, eligible laps are grouped into the appropriate dry or wet reference cards.
-- Each valid lap contributes to its matching combination instead of uploading the complete `.ibt` file.
-
-This helps keep the community references relevant to the conditions in which the car was driven.
+[**Get PS-Analysis 0.1.11 alpha**](https://github.com/hitschler23/PostStint-Analysis-PS-Analysis-/releases/tag/v0.1.11)
 
 ---
 
-## 🖥️ Local AI and Performance
+## Current version
 
-PS-Analysis uses local AI components for its coaching workflow. Analysis takes place after the driving session, helping avoid unnecessary computing load while you are on track.
+**PS-Analysis 0.1.11 alpha**
 
-The aim is to provide useful coaching without requiring a central server to perform the core analysis.
+- Discord sign-in
+- Train the coach on older telemetry, each file once, anonymous
+- Introduction before the online window on first sign-in
+- Installer in English, German on German Windows
+- Telemetry path follows the real Documents folder, including OneDrive and localized folder names
+- Community cards per corner: brake, throttle, steering, apex speed, and setup ranges
+- The coach names the near edge of those ranges
 
-Community sharing and updates depend on the online services being available; local analysis can continue using the data already stored on your PC.
-
----
-
-## 🚧 Alpha Testing — Maximum 7 Testers
-
-PS-Analysis is actively being developed and is currently in the alpha stage.
-
-**Only 7 testers maximum are planned for this testing phase.**
-
-The current priority is to test the coaching quality, telemetry analysis, setup references, installation and overall stability with real iRacing sessions.
-
-Feedback from testers will help improve the system and the quality of its recommendations.
-
-[**Get PS-Analysis 0.1.10 alpha**](https://github.com/hitschler23/PostStint-Analysis-PS-Analysis-/releases/tag/v0.1.10)
-
----
-
-## 🛠️ Current Version
-
-**PS-Analysis 0.1.10 alpha**
-
-Latest improvements:
-- Denser community telemetry for individual corners
-- Braking, throttle, steering and apex-speed reference data
-- Setup parameter ranges
-- Continued development of local coaching and community references
-
-PS-Analysis is an evolving project. Features, recommendations and stability may change during alpha testing.
+Thanks to ラグナチャン in Japan for the clear findings on installer language, the Documents folder, and the old name in the setup texts.
 
 **PostStint Analysis — Drive. Learn. Optimize.**
