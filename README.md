@@ -5,7 +5,7 @@
 
 PostStint Analysis analyzes your driving after each stint and helps you improve both your driving technique and your car setup. It runs locally on your PC, uses your iRacing telemetry, and combines your own driving data with anonymous community reference cards.
 
-**Alpha version 0.1.11 — currently limited to a maximum of 7 testers.**
+**Alpha version 0.1.120 — currently limited to a maximum of 100 testers.**
 
 [**Download the latest release**](https://github.com/hitschler23/PostStint-Analysis-PS-Analysis-/releases/latest) · [View source code](https://github.com/hitschler23/PostStint-Analysis-PS-Analysis-)
 
@@ -105,26 +105,9 @@ Analysis runs locally after the session, so the PC is not doing this work while 
 
 ---
 
-## Alpha — maximum 7 testers
+## Alpha — maximum 100 testers
 
-PS-Analysis is in alpha. This phase is limited to 7 testers. The aim is to find bugs, improve coaching quality, and make the app more reliable. Tester feedback shapes the next releases.
+PS-Analysis is in alpha. This phase is limited to 100 testers. The aim is to find bugs, improve coaching quality, and make the app more reliable. Tester feedback shapes the next releases.
 
-[**Get PS-Analysis 0.1.11 alpha**](https://github.com/hitschler23/PostStint-Analysis-PS-Analysis-/releases/tag/v0.1.11)
-
----
-
-## Current version
-
-**PS-Analysis 0.1.11 alpha**
-
-- Discord sign-in
-- Train the coach on older telemetry, each file once, anonymous
-- Introduction before the online window on first sign-in
-- Installer in English, German on German Windows
-- Telemetry path follows the real Documents folder, including OneDrive and localized folder names
-- Community cards per corner: brake, throttle, steering, apex speed, and setup ranges
-- The coach names the near edge of those ranges
-
-Thanks to ラグナチャン in Japan for the clear findings on installer language, the Documents folder, and the old name in the setup texts.
 
 **PostStint Analysis — Drive. Learn. Optimize.**
