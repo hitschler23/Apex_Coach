@@ -5,7 +5,7 @@
 
 PostStint Analysis analyzes your driving after each stint and helps you improve both your driving technique and your car setup. It runs locally on your PC, uses your iRacing telemetry, and combines your own driving data with anonymous community reference cards.
 
-**Alpha version 0.1.120 — currently limited to a maximum of 100 testers.**
+**Alpha version 0.1.121 — currently limited to a maximum of 100 testers.**
 
 [**Download the latest release**](https://github.com/hitschler23/PostStint-Analysis-PS-Analysis-/releases/latest) · [View source code](https://github.com/hitschler23/PostStint-Analysis-PS-Analysis-)
 
